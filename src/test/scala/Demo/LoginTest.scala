@@ -21,6 +21,7 @@ class LoginTest extends Simulation{
       .check(status.is(200))
       .check(jsonPath("$.token").saveAs("authToken"))
     )
+  
 
   // 3 Load Scenario
   setUp(
